@@ -109,7 +109,7 @@ export default function AppDrawer() {
             name: 'Server Data',
             path: '/dashboard/serverdata',
         },
-        { name: 'Server Notes', path: '/dashboard/servernotes' },
+        // { name: 'Server Notes', path: '/dashboard/servernotes' },
     ];
     const handleDrawerOpen = () => {
         setOpen(true);
