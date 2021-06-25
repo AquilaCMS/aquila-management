@@ -1,0 +1,59 @@
+{
+    "name": "aquila-management-front",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "private": true,
+    "main": "./src/index.jsx",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.11.4",
+        "@material-ui/icons": "^4.11.2",
+        "axios": "^0.21.1",
+        "clsx": "^1.1.1",
+        "got": "^11.8.2",
+        "notistack": "^1.0.9",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build && rm -rf ../aquila-management-api/build && mv build ../aquila-management-api/",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint .",
+        "lintfix": "eslint . --fix"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.+(js|jsx)": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.+(json|css|md)": [
+            "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+            "git add"
+        ]
+    }
+}

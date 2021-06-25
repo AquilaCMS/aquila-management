@@ -1,0 +1,61 @@
+{
+    "name": "aquila-management",
+    "private": true,
+    "workspaces": ["packages/*"],
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "scripts": {
+        "start:front": "yarn workspace aquila-management-front start",
+        "start:api": "yarn workspace aquila-management-api start",
+        "start:both": "concurrently --kill-others-on-fail \"npm:start:front\"  \"npm:start:api\"",
+        "build": "yarn workspace aquila-management-front build",
+        "start:pm2": "yarn workspace aquila-management-api start:pm2"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.12.0",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^13.1.9",
+        "concurrently": "^6.2.0",
+        "eslint": "^7.27.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.3",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.3.0",
+        "react-scripts": "^4.0.3",
+        "yarn-upgrade-all": "^0.5.4"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.+(js|jsx)": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.+(json|css|md)": [
+            "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+            "git add"
+        ]
+    }
+}

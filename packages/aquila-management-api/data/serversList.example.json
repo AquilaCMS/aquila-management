@@ -1,0 +1,5 @@
+{
+    "serversList": [
+        ["localhost", "http://localhost:3050/"]
+    ]
+}

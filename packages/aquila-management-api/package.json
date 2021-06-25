@@ -1,0 +1,26 @@
+{
+  "name": "aquila-management-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+      "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon --ignore *data/",
+    "start:pm2": "pm2 start ecosystem.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "got": "^11.8.2",
+      "lowdb": "^2.1.0",
+      "systeminformation": "^5.7.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
