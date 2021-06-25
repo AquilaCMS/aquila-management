@@ -196,7 +196,7 @@ export default function AppDrawer() {
                 <Switch>
                     <Route exact path="/dashboard/serverdata" component={ServerDataPage} />
                     {/* TODO : The server notes page */}
-                    <Route exact path="/dashboard/servernotes" component={ServerDataPage} /> 
+                    <Route exact path="/dashboard/servernotes" component={ServerDataPage} />
                     {modules.map((module) => (
                         <Route {...module.routeProps} key={module.name} />
                     ))}

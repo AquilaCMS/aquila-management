@@ -9,8 +9,9 @@ Thanks to Aquila Probe, the project can also be used as an interface between HTT
 
 If you want to run it in a development mode (the front is not pre-built and two processes are launch) :
 1. yarn install
-2. cp packages/aquila-management-api/data/serversList.example.json packages/aquila-management-api/data/serversList.json
-3. npm run start:both
+2. cp packages/aquila-management-front/.env.example packages/aquila-management-front/.env
+3. cp packages/aquila-management-api/data/serversList.example.json packages/aquila-management-api/data/serversList.json
+4. npm run start:both
 
 If you want to run it in a production mode (the front is build and only one process is launch) :
 1. yarn install
