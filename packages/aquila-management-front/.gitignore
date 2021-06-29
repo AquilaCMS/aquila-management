@@ -22,3 +22,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/modules/*
+!src/modules/index.jsx
+!src/modules/Sample-Module

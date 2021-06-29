@@ -3,6 +3,7 @@
 input.txt
 serversList.json
 build/
-modules/
+modules/*
 !modules/routes.js
 !modules/modulesRoutes.json
+!modules/Sample-Module
