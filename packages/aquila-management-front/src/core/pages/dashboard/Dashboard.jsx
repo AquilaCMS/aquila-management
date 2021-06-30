@@ -1,6 +1,6 @@
 import React from 'react';
-import AppDrawer from '../../components/appDrawer';
+import MainAppBar from '../../components/MainAppBar';
 
 export default function Dashboard() {
-    return <AppDrawer></AppDrawer>;
+    return <MainAppBar></MainAppBar>;
 }
