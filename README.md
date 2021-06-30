@@ -24,6 +24,8 @@ If you want to run it in a production mode (the front is build and only one proc
 ## Modules
 
 Aquila Management has been developed in a modular way.
+
 To create a module you can start from the Sample-Module located in `packages/aquila-management-front/src/modules` for the front end and `packages/aquila-management-api/modules` for the API.
+
 To manually install a module, put the folder of your module in `packages/aquila-management-front/src/modules` or `packages/aquila-management-api/modules`.
 You also need to modify a file, the `packages/aquila-management-front/src/modules/index.jsx` file for the front end and the `packages/aquila-management-api/modules/modulesRoutes.json` file for the API.
