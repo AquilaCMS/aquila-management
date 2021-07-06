@@ -77,7 +77,7 @@ export default function DockerInfo(props) {
                                 <DockerActionsMenu id="all" />
                             </TableCell>
                             <TableCell>
-                                <ScriptsMenu name="all" type="Docker" serverUrl={serverUrl} />
+                                <ScriptsMenu args={['all']} type="Docker" serverUrl={serverUrl} />
                             </TableCell>
                         </TableRow>
                     </TableHead>

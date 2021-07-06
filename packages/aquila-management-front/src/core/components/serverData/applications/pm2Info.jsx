@@ -84,7 +84,7 @@ export default function Pm2Info(props) {
                                 <Pm2ActionsMenu name="all" />
                             </TableCell>
                             <TableCell>
-                                <ScriptsMenu name="all" type="Pm2" serverUrl={serverUrl} />
+                                <ScriptsMenu args={['all']} type="Pm2" serverUrl={serverUrl} />
                             </TableCell>
                         </TableRow>
                     </TableHead>
